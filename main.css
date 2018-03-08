@@ -2,27 +2,58 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgba(53, 99, 80, 0.7)
+    background-color: rgb(83, 153, 122);
+    overflow-x: hidden;
 }
 
-header {
-    width: 100%;
-    height: 400px;
-    margin-top: -55px;
-    background-image: url("images/home-one/IMG_7301-HDR.jpg");
-    background-size: cover;
-    background-position-y: -125px;
+.navbar {
+    width: 100vw;
+    background-color: rgb(201, 255, 7);
+    height: 100px;
     display: grid;
     justify-content: center;
     align-content: center;
 }
 
-#header-overlay {
-    position: absolute;
+.container {
+    width: 1000px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto 600px;
+}
+
+ul {
+    text-align: center;
+}
+li  {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.hero {
     width: 100%;
-    height: 345px;
-    top: 0;
-    background-color: rgba(0,0,0,0.3);
+    height: 400px;
+    background-image: url("images/home-one/IMG_7301-HDR.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.logo {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.head-logo {
+    max-height: 100px;
+    max-width: 100px;
 }
 
 h1 {
@@ -32,14 +63,16 @@ h1 {
 }
 
 h2 {
-    color: white;
-    font-size: 2em;
+    color: rgb(126,20,22);
+    font-size: 3em;
     text-align: center;
     z-index: 2;
+    text-shadow: 2px 2px rgba(0,0,0,0.7);
 }
 
 h3 {
-    color: white;
+    color: rgb(201, 255, 7);
+    text-shadow: 2px 2px rgba(0,0,0,0.7);
     font-size: 2em;
     z-index: 2;
 }
@@ -53,21 +86,26 @@ h4 {
 p {
     color: white;
 }
-
+.testimonial-cont {
+background-color: rgb(201, 255, 7);
+padding: 15px;
+}
 .testimonials {
     margin: 20px;
     padding: 10px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.76);
 }
 
 #menu-cont {
     height: auto;
     padding: 20px;
     display: grid;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-flow: 1fr;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 50px;
+    overflow-y: hidden;
+    
 }
 
 .blocks {
@@ -76,27 +114,52 @@ p {
     background-color: rgba(0,0,0,0.7);
     display: grid;
     justify-items: center;
-    align-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 #left {
-    background-image: url("images/floorplan.jpg");
+    background-image: url("images/floorplan.png");
     background-size: cover;
+    background-color: rgb(255,255,255);
+}
+
+#left:hover {
+    height: 275px;
+    width: 275px;
 }
 
 #mid-l {
-    background-image: url("images/home-two/IMG_1188-HDR.jpg");
+    background-image: url("images/camera.png");
     background-size: cover;
+    background-color: rgb(255,255,255);
+}
+
+#mid-l:hover {
+    height: 275px;
+    width: 275px;
 }
 
 #mid-r {
     background-image: url("images/mail.jpg");
     background-size: cover;
+    background-color: rgb(255,255,255);
+}
+
+#mid-r:hover {
+    height: 275px;
+    width: 275px;
 }
 
 #right {
-    background-image: url("images/mva.png");
+    background-image: url("images/question.png");
     background-size: cover;
+    background-color: rgb(255,255,255);
+}
+
+#right:hover {
+    height: 275px;
+    width: 275px;
 }
 
 .menu-overlay {
@@ -106,11 +169,15 @@ p {
     background-color: rgba(0,0,0,0.7);
 }
 
+.photos-cont {
+    background-color: rgb(83, 153, 122);
+}
+
 #photos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 600px);
     grid-gap: 15px;
-    justify-items: center;
+    justify-content: center;
 }
 
 .img {
@@ -123,5 +190,14 @@ button {
 }
 
 
+@media (max-width: 800px) {
+    .logo {
+        max-height:300px;
+        max-width: 300px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+}
 
 
