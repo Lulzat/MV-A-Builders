@@ -31,7 +31,8 @@ body {
 ul {
     text-align: center;
 }
-li  {
+
+li {
     list-style-type: none;
     display: inline-block;
     margin-right: 50px;
@@ -71,18 +72,17 @@ h1 {
 }
 
 h2 {
-    color: rgb(126,20,22);
+    color: rgb(126, 20, 22);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3em;
     text-align: center;
-    text-
-    z-index: 2;
+    text- z-index: 2;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 h3 {
-    color: rgb(126,20,22);
-    text-shadow: 2px 2px rgba(0,0,0,0.7);
+    color: rgb(126, 20, 22);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
     font-size: 2em;
     z-index: 2;
 }
@@ -100,10 +100,12 @@ p {
 .text {
     color: black;
 }
+
 .testimonial-cont {
-background-color: rgb(255, 255, 255);
-padding: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
 }
+
 .testimonials {
     margin: 20px;
     padding: 10px;
@@ -121,7 +123,6 @@ padding: 15px;
     grid-gap: 50px;
     overflow-y: hidden;
     background-color: rgb(201, 255, 7);
-    
 }
 
 .blocks {
@@ -137,7 +138,7 @@ padding: 15px;
 #left {
     background-image: url("images/floorplan.png");
     background-size: cover;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 #left:hover {
@@ -148,7 +149,7 @@ padding: 15px;
 #mid-l {
     background-image: url("images/camera.png");
     background-size: cover;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 #mid-l:hover {
@@ -159,7 +160,7 @@ padding: 15px;
 #mid-r {
     background-image: url("images/mail.jpg");
     background-size: cover;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 #mid-r:hover {
@@ -170,7 +171,7 @@ padding: 15px;
 #right {
     background-image: url("images/question.png");
     background-size: cover;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 #right:hover {
@@ -182,7 +183,7 @@ padding: 15px;
     margin-top: -102px;
     height: 250px;
     width: 250px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .photos-cont {
@@ -224,7 +225,6 @@ button {
     width: 50%;
 }
 
-
 .menu-button {
     background: none;
     border: none;
@@ -257,7 +257,6 @@ h3 {
     margin-top: -10px;
 }
 
-
 #nav-bar {
     position: fixed;
     height: 50vh;
@@ -270,15 +269,17 @@ h3 {
     justify-items: center;
     align-content: center;
 }
+
 .dropdown {
     display: grid;
 }
+
 .dropdown-items {
-    color: rgb(126,20,22);
+    color: rgb(126, 20, 22);
     font-size: 25px;
 }
 
-.dropdown-items:hover{
+.dropdown-items:hover {
     color: rgba(126, 20, 22, 0.699);
 }
 
@@ -293,25 +294,22 @@ h3 {
 .transform-active {
     transform: translateY(50vh);
 }
+
 @media (max-width: 1000px) {
     .logo {
-        max-height:300px;
+        max-height: 300px;
         max-width: 300px;
     }
     h2 {
         font-size: 2em;
     }
-
     .text-cont {
         grid-template-columns: 1fr;
     }
     .container {
         visibility: hidden;
     }
-    
     .menu-button {
         left: 50vw;
     }
 }
-
-
