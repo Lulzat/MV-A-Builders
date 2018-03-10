@@ -2,42 +2,109 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible">
-  <title>MV&amp;A</title>
-  <meta name="description" content="MV&amp;A">
-  <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <title>MV&amp;A</title>
+    <meta name="description" content="MV&amp;A">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
-    <header class = "header">
-        <h1>M V &amp; A Builders</h1>
-        <h2>We Build It, So You Don't Have To.</h2>
-        <div id = "header-overlay">
-
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <div>
+                    <img src="images/mvalogo.png" class="head-logo">
+                </div>
+                <ul class>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="floorplans.html">Floorplans</a>
+                        </li>
+                        <li>
+                            <a href="photos.html">Photos</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                                <a href="about.html">About</a>
+                            </li>
+                    </ul>
+            </div>
         </div>
     </header>
-
-    <div class = "menu">
-        <div id = "left" class = "blocks">
-            <h3>Floorplans</h3>
-            <div class = "menu-overlay"></div>
-        </div>
-        <div id = "mid-l" class = "blocks">
-            <h3>Photos</h3>
-            <div class = "menu-overlay"></div>
-        </div>
-        <div id = "mid-r" class = "blocks">
-            <h3>Contact</h3>
-            <div class = "menu-overlay"></div>
-        </div>
-        <div id = "right" class = "blocks">
-            <h3>About</h3>
-            <div class = "menu-overlay"></div>
-        </div>
+    <button class="menu-button" onclick="toggleNav()">
+            <img src="images/menu.png" id="hamburger">
+            <h3>menu</h3>
+        </button>
+    <nav id="nav-bar" class="transform">
+            <img src="images/mvalogo.png" class="head-logo" id = "drop-logo">
+            <ul class = "dropdown">
+                <li class = "dropdown-items">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class = "dropdown-items">
+                    <a href="floorplans.html">Floorplans</a>
+                </li>
+                <li class = "dropdown-items">
+                    <a href="photos.html">Photos</a>
+                </li>
+                <li class = "dropdown-items">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class = "dropdown-items">
+                        <a href="about.html">About</a>
+                    </li>
+            </ul>
+        </nav>
+    <h2>Photos</h2>
+    <div id="photos">
+        <img src="images/home-one/IMG_7257-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7261-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7265-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7273-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7285-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
+        <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
     </div>
-  <!--JavaScript-->
-  <script src="javascript.js"></script>
+    <!--JavaScript-->
+    <script>
+    function toggleNav() {
+    var navBar = document.getElementById("nav-bar");
+    if (navBar.classList.contains("transform-active")) {
+        navBar.classList.remove("transform-active");
+    } else {
+        navBar.classList.add("transform-active");
+    }
+}
+    </script>
 </body>
 
 </html>

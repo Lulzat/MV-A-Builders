@@ -2,47 +2,86 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible">
-  <title>MV&amp;A</title>
-  <meta name="description" content="MV&amp;A">
-  <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <title>MV&amp;A</title>
+    <meta name="description" content="MV&amp;A">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
-    <header class = "header">
-        <h1>M V &amp; A Builders</h1>
-        <h2>We Build It, So You Don't Have To.</h2>
-        <div id = "header-overlay">
-
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <div>
+                    <img src="images/mvalogo.png" class="head-logo">
+                </div>
+                <ul class>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="floorplans.html">Floorplans</a>
+                        </li>
+                        <li>
+                            <a href="photos.html">Photos</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                                <a href="about.html">About</a>
+                            </li>
+                    </ul>
+            </div>
         </div>
     </header>
-
-    <div class = "menu">
-        <div id = "left" class = "blocks">
-            <h3>Floorplans</h3>
-            <div class = "menu-overlay"></div>
-        </div>
-        <div id = "mid-l" class = "blocks">
-            <h3>Photos</h3>
-            <div class = "menu-overlay"></div>
-        </div>
-        <div id = "mid-r" class = "blocks">
-            <h3>Contact</h3>
-            <div class = "menu-overlay"></div>
-        </div>
-        <div id = "right" class = "blocks">
-            <h3>About</h3>
-            <div class = "menu-overlay"></div>
-        </div>
+    <button class="menu-button" onclick="toggleNav()">
+            <img src="images/menu.png" id="hamburger">
+            <h3>menu</h3>
+        </button>
+    <nav id="nav-bar" class="transform">
+            <img src="images/mvalogo.png" class="head-logo" id = "drop-logo">
+            <ul class = "dropdown">
+                <li class = "dropdown-items">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class = "dropdown-items">
+                    <a href="floorplans.html">Floorplans</a>
+                </li>
+                <li class = "dropdown-items">
+                    <a href="photos.html">Photos</a>
+                </li>
+                <li class = "dropdown-items">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class = "dropdown-items">
+                        <a href="about.html">About</a>
+                    </li>
+            </ul>
+        </nav>
+    <div class = "text-cont">
+            <div id = "who">
+                <h3>Who We Are</h3>
+                <P class = "text">We are a group of elite professionals specializing in a wide array of ninja skills,
+                    samurai skills, homebuilding stuff, and general ass-kickery. We've helped literally billions
+                    of people get the castle of their dreams by using our superior brain power to telepathically
+                    build houses in front of their very eyeballs. Don't believe us? Give us a call. Or are you chicken?
+                </P>
+            </div>
     </div>
-
-    <p>Based in DFW Texas, MV&amp;A Builders builds custom homes of all sizes at affordable prices. We work have a variety of
-            premade floorplans available for you to choose, or can work with you to design the home of your dreams. We have a great
-            team of contractors and a realtor all ready to help make your dream a reality. For more information click below!
-        </p>
-  <!--JavaScript-->
-  <script src="javascript.js"></script>
+    <!--JavaScript-->
+    <script>
+    function toggleNav() {
+    var navBar = document.getElementById("nav-bar");
+    if (navBar.classList.contains("transform-active")) {
+        navBar.classList.remove("transform-active");
+    } else {
+        navBar.classList.add("transform-active");
+    }
+}
+    </script>
 </body>
 
 </html>
