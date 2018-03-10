@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible">
     <title>MV&amp;A</title>
     <meta name="description" content="MV&amp;A">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
     <header>
+
+        <button class="menu-button" onclick="toggleNav()">
+            <img src="images/menu.png" id="hamburger">
+            <h3>menu</h3>
+        </button>
+
         <div class="navbar">
             <div class="container">
                 <div>
@@ -36,38 +42,38 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Drop Down -->
+
+        <nav id="nav-bar" class="transform">
+            <img src="images/mvalogo.png" class="head-logo" id="drop-logo">
+            <ul class="dropdown">
+                <li class="dropdown-items">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown-items">
+                    <a href="floorplans.html">Floorplans</a>
+                </li>
+                <li class="dropdown-items">
+                    <a href="photos.html">Photos</a>
+                </li>
+                <li class="dropdown-items">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="dropdown-items">
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Drop Down End -->
     </header>
-    <button class="menu-button" onclick="toggleNav()">
-        <img src="images/menu.png" id="hamburger">
-        <h3>menu</h3>
-    </button>
-    <nav id="nav-bar" class="transform">
-        <img src="images/mvalogo.png" class="head-logo" id="drop-logo">
-        <ul class="dropdown">
-            <li class="dropdown-items">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="dropdown-items">
-                <a href="floorplans.html">Floorplans</a>
-            </li>
-            <li class="dropdown-items">
-                <a href="photos.html">Photos</a>
-            </li>
-            <li class="dropdown-items">
-                <a href="contact.html">Contact</a>
-            </li>
-            <li class="dropdown-items">
-                <a href="about.html">About</a>
-            </li>
-        </ul>
-    </nav>
+
     <div class="hero">
         <img src="images/mvalogo.png" class="logo">
         <h2>We Build It, So You Don't Have To.</h2>
-        <!-- <div id="hero-overlay">
-
-        </div> -->
     </div>
+
     <div id="menu-cont">
         <div id="left" class="blocks">
             <h3>Floorplans</h3>
@@ -82,6 +88,7 @@
             <h3>About</h3>
         </div>
     </div>
+
     <div class="text-cont">
         <div id="who">
             <h3>Who We Are</h3>
@@ -100,6 +107,7 @@
             </p>
         </div>
     </div>
+
     <div class="testimonial-cont">
         <h2>Testimonials</h2>
         <div class="testimonials">
@@ -119,6 +127,7 @@
             </p>
         </div>
     </div>
+
     <h2>Photos</h2>
     <div id="photos">
         <img src="images/home-one/IMG_7257-HDR.jpg" class="img">
@@ -129,6 +138,7 @@
         <img src="images/home-one/IMG_7305-HDR.jpg" class="img">
         <a href="photos.html">More Photos -></a>
     </div>
+
     <!--JavaScript-->
     <script>
         function toggleNav() {
