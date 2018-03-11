@@ -11,7 +11,7 @@ body {
 
 .navbar {
     width: 100vw;
-    background-color: rgb(201, 255, 7);
+    background-color: rgb(255, 238, 0);
     height: auto;
     display: grid;
     justify-content: center;
@@ -41,7 +41,7 @@ body {
     position: fixed;
     left: -50vw;
     z-index: 99;
-    color: rgb(238, 255, 0);
+    color: rgb(255, 238, 0);
     text-align: center;
     padding: 0;
 }
@@ -61,7 +61,7 @@ a {
     position: fixed;
     height: 50vh;
     width: 100%;
-    background-color: rgba(238, 255, 0, 0.589);
+    background-color: rgba(255, 238, 0, 0.781);
     top: -50vh;
     z-index: 50;
     display: grid;
@@ -155,13 +155,13 @@ li:hover {
     grid-template-columns: repeat(auto-fill, 250px);
     grid-gap: 50px;
     overflow-y: hidden;
-    background-color: rgb(201, 255, 7);
+    background-color: rgb(255, 238, 0);
 }
 
 .blocks {
     height: 250px;
     width: 250px;
-    background-color: rgb(201, 255, 7);
+    background-color: rgb(255, 238, 0);
     display: grid;
     justify-items: center;
     align-items: center;
@@ -220,7 +220,7 @@ li:hover {
     padding: 20px;
     grid-gap: 10px;
     justify-items: center;
-    background-color: rgb(201, 255, 7);
+    background-color: rgb(255, 238, 0);
 }
 
 #who {
