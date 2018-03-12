@@ -31,6 +31,10 @@ body {
     grid-template-columns: auto 1fr;
 }
 
+.nav-items {
+    text-align: center;
+}
+
 .menu-button {
     background: none;
     border: none;
@@ -78,6 +82,8 @@ a {
 
 .dropdown {
     display: grid;
+    text-align: center;
+    margin-top: -20px;
 }
 
 .dropdown-items {
@@ -99,11 +105,6 @@ a {
 
 .transform-active {
     transform: translateY(50vh);
-}
-
-ul {
-    text-align: center;
-    margin-top: -20px;
 }
 
 li {
@@ -158,6 +159,7 @@ li:hover {
     padding: 20px;
     display: grid;
     justify-content: center;
+    justify-items: center;
     align-items: center;
     grid-template-columns: repeat(auto-fill, 250px);
     grid-gap: 50px;
